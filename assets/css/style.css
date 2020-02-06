@@ -186,6 +186,10 @@ nav a{
   position: absolute;
   z-index: -1;
   height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  right: 0;
 }
 
 .slides img{
@@ -193,14 +197,11 @@ nav a{
 }
 .slide-one{
   position: relative;
+  background-color: rgba(0,0,0,0.2);
 }
 
 .slide-one div{
-  max-width: 1360px;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 12.2% 21% 9%;
-  background-color: rgba(0,0,0,0.3);
+  padding: 12.2% 0 9%;
 }
 
 h2 span{
@@ -359,6 +360,148 @@ h4 + p {
   color: #6E5EE7;
   padding: 1px 8px 0;
 }
+
+.best-in{
+  padding-bottom: 11px;
+}
+
+.best-in div:first-child{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.best-in article{
+  display: inline-block;
+  width: 39%;
+  margin-left: 20%;
+}
+
+.best-in ul{
+  display: inline-block;
+  width: 40%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.best-in ul li{
+  border: 1px solid rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  width: 47%;
+  text-align: center;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 11px;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 65px;
+  padding-bottom: 28px;
+  margin-bottom: 13px;
+}
+
+.happy-smile,
+.girl,
+.heart,
+.eye {
+  text-indent: -9999px;
+  display:block;
+  position: absolute;
+  width: 100%;
+  top: 25px;
+}
+
+.girl::before{
+  content: '\f182';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  font-size: 33px;
+  color: #6E5EE7;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.happy-smile::before{
+  content: '\f118';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 33px;
+  color: #6E5EE7;
+  position: absolute;
+  font-weight: 300;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.heart::before{
+  content: '\f004';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 33px;
+  color: #6E5EE7;
+  position: absolute;
+  font-weight: 300;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.eye::before{
+  content: '\f06e';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 33px;
+  color: #6E5EE7;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.best-in article p{
+  color: rgba(0,0,0,0.6);
+  font-size: 8px;
+  display: block;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 13px;
+  padding-bottom: 24px;
+}
+
+.best-in h3{
+  text-align: left;
+  padding-top: 37px;
+}
+
+.best-in h3 + span{
+  text-align: left;
+  padding-bottom: 14px;
+}
+
+.best-in article a{
+  color: #FFF;
+  font-size: 8px;
+  font-weight: 300;
+  padding: 8px 20px;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  background-color: rgba(252,66,66,0.8);
+  border-radius: 3px;
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -375,4 +518,6 @@ h4 + p {
 
  /*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
+
+} 
