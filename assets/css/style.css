@@ -502,6 +502,199 @@ h4 + p {
   background-color: rgba(252,66,66,0.8);
   border-radius: 3px;
 }
+
+
+.advertisment figure{
+  display: inline-block;
+  width: 58.3%;
+  float: left;
+  height: 100%;
+}
+
+.advertisment figure img{
+  height: 100%;
+}
+
+.advertisment{
+  display: -webkit-box;
+  display: flex;
+  height: 10%;
+  
+}
+
+.users{
+  display: inline-block;
+  background-color: #FC4242;
+  width: 41.7%;
+  box-sizing: border-box;
+  padding: 3.8%;
+  height: 100%;
+}
+
+.users span{
+  color: #1F1F1F;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 11px;
+  display: block;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.users h4{
+  color: #FFF;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+
+.profile {
+  text-indent: -9999px;
+  display:block;
+  position: relative;
+  padding-bottom: 26px;
+}
+
+.profile::before{
+  content: '\f007';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  font-size: 14px;
+  background-color: #FFF;
+  padding: 11px 14px;
+  border-radius: 50%;
+  color: #000;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.profile + h4 {
+  text-transform: capitalize;
+  padding-bottom: 6px;
+}
+
+.users p{
+  color: #FFF;
+  padding: 0 21%;
+}
+
+footer{
+  color: #FFF;
+  background-color: #1F1F1F;
+}
+
+.footer-content{
+  display: -webkit-box;
+  display: flex;
+}
+
+.footer-content li{
+  width: 24%;
+}
+
+.footer-content li:nth-child(3){
+  width: 24%;
+}
+
+footer h3{
+  color: #FFF;
+  padding: 0;
+  padding-bottom: 11px;
+  text-align: left;
+}
+
+footer h3 + p {
+  color: rgba(255,255,255,0.6);
+  font-size: 8px;
+  display: block;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 13px;
+  padding-bottom: 24px;
+  padding-right: 1%;
+}
+
+h6{
+  color: #FFF;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 18px;
+}
+
+.footer-content .recent-article li{
+  color: rgba(255,255,255,0.6);
+  font-size: 8px;
+  display: block;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 13px;
+  padding-bottom: 4px;
+  padding-right: 1%;
+  width: 100%;
+}
+
+.instagram-posts {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 3px;
+}
+
+
+.footer-content .instagram-posts li{
+  width: 32%;
+  padding-bottom: 4px;
+}
+
+.contact a{
+  color: rgba(255,255,255,0.6);
+  font-size: 8px;
+  display: block;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 13px;
+  padding-bottom: 4px;
+  padding-right: 1%;
+  width: 100%;
+  
+}
+
+.footer-content .contact li{
+  width: 100%;
+}
+
+.location,
+.mail,
+.phone,
+.time{
+  position: relative;
+}
+
+
+.mail::before{
+  content: '\f0e0';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  font-size: 12px;
+  border-radius: 50%;
+  color: #FFF;
+  font-weight: 300;
+  
+}
+
+
+
 /*=================================
   main styling ends here
 =================================*/
