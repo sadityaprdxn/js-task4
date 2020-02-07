@@ -127,10 +127,40 @@ h1{
 nav {
   display: inline-block;
 }
+.dropdown{
+  position: relative;
+}
+
 
 .dropdown ul,
 .hamburger{
   display: none;
+}
+
+.dropdown:hover ul{
+  display: block;
+}
+
+.dropdown ul{
+  position: absolute;
+  top: 22px;
+  left: 1px;
+  width: 100%;
+  background-color: #FFF;
+  padding: 5px 0;
+  border-radius: 3px;
+}
+.dropdown ul li{
+  display: block;
+}
+
+.dropdown ul li a{
+  display: block;
+  color: #000;
+}
+.dropdown ul a:hover{
+  background-color: #000;
+  color: #FFF;
 }
 
 header div:first-child {
@@ -143,17 +173,15 @@ header div:first-child {
           justify-content: space-between;
 }
 
-nav ul {
-  text-transform: capitalize;
-}
-
 nav a{
   color: #FFF;
   font-size: 10px;
   padding: 2.5px 9px 3px;
   border-radius: 3px;
   margin: 0 6.5px;
-  background-color: black;
+  text-transform: capitalize;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .down-side-arrow::after{
@@ -164,6 +192,19 @@ nav a{
   font-size: 10px;
   color: #FFF;
   padding: 1.5px 0 0 5px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+nav a:hover{
+  background-color: #FFF;
+  color: #000;
+}
+
+
+.down-side-arrow:hover::after{
+  color: #000;
+
 }
 
 /*=================================
@@ -173,14 +214,15 @@ nav a{
 /*=================================
   main styling starts here
 =================================*/
-
 .banner{
   position: relative;
+  background-color: rgba(0,0,0,0.4);
 }
 .slide-two,
 .slide-three{
   display: none;
 }
+
 
 .slides .slide-one figure{
   position: absolute;
@@ -195,13 +237,9 @@ nav a{
 .slides img{
   height: 100%;
 }
-.slide-one{
-  position: relative;
-  background-color: rgba(0,0,0,0.2);
-}
 
-.slide-one div{
-  padding: 12.2% 0 9%;
+.slide-one{
+  padding: 21.2% 0 15.5%;
 }
 
 h2 span{
@@ -229,7 +267,14 @@ h2{
   padding: 8px 20px;
   text-transform: capitalize;
   letter-spacing: 1.5px;
-  background-color: rgba(0,0,0,0.5);
+  border-radius: 3px;
+  background-color: rgba(252,66,66,0.8);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.slides a:hover{
+  background-color: rgba(252,66,66,1);
 }
 
 .slider-left-button,
@@ -238,15 +283,21 @@ h2{
   display: inline-block;
   position: absolute;
   top: 49.5%;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 .slider-left-button{
   left: 4.8%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .slider-right-button{
   right: 4.8%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .slider-left-button::before{
@@ -256,6 +307,7 @@ h2{
   float: right;
   font-size: 25px;
   color: #FFF;
+  padding: 20px;
 }
 
 .slider-right-button::before{
@@ -265,7 +317,14 @@ h2{
   float: right;
   font-size: 25px;
   color: #FFF;
+  padding: 20px;
 }
+
+.slider-right-button:hover,
+.slider-left-button:hover{
+  background-color: rgba(0,0,0,0.4);
+}
+
 
 .welcome{
   background-color: rgba(0,0,0,0.1);
@@ -501,25 +560,34 @@ h4 + p {
   letter-spacing: 1.5px;
   background-color: rgba(252,66,66,0.8);
   border-radius: 3px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.best-in article a:hover{
+  background-color: rgba(252,66,66,1);
 }
 
 
 .advertisment figure{
   display: inline-block;
   width: 58.3%;
-  float: left;
-  height: 100%;
 }
 
 .advertisment figure img{
   height: 100%;
 }
 
+
 .advertisment{
   display: -webkit-box;
   display: flex;
-  height: 10%;
-  
+}
+
+.advertisment .wrapper{
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
 }
 
 .users{
@@ -583,19 +651,19 @@ h4 + p {
 footer{
   color: #FFF;
   background-color: #1F1F1F;
+  padding: 36px 0;
 }
 
 .footer-content{
   display: -webkit-box;
   display: flex;
 }
-
 .footer-content li{
   width: 24%;
 }
+.recent-article{
+  padding-left: 2%;
 
-.footer-content li:nth-child(3){
-  width: 24%;
 }
 
 footer h3{
@@ -627,7 +695,6 @@ h6{
 }
 
 .footer-content .recent-article li{
-  color: rgba(255,255,255,0.6);
   font-size: 8px;
   display: block;
   font-weight: 500;
@@ -640,7 +707,11 @@ h6{
   width: 100%;
 }
 
-.instagram-posts {
+.recent-article a{
+  color: rgba(255,255,255,0.6);
+}
+
+.instagram-posts ul {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -651,8 +722,13 @@ h6{
 
 
 .footer-content .instagram-posts li{
-  width: 32%;
+  width: 31%;
   padding-bottom: 4px;
+}
+
+.contact{
+  padding-left: 2%;
+  width: 20%;
 }
 
 .contact a{
@@ -679,6 +755,7 @@ h6{
 .phone,
 .time{
   position: relative;
+  padding-left: 10%;
 }
 
 
@@ -686,11 +763,55 @@ h6{
   content: '\f0e0';
   font-family: "fontAwesome";
   text-indent: 0;
+  font-size: 9px;
+  border-radius: 50%;
+  color: #FFF;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  
+}
+
+.location::before{
+  content: '\f041';
+  font-family: "fontAwesome";
+  text-indent: 0;
   font-size: 12px;
   border-radius: 50%;
   color: #FFF;
   font-weight: 300;
+  position: absolute;
+  left: 0;
   
+}
+
+.phone::before{
+  content: '\f095';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  font-size: 10px;
+  border-radius: 50%;
+  color: #FFF;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  
+}
+
+.time::before{
+  content: '\f017';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  font-size: 10px;
+  border-radius: 50%;
+  color: #FFF;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+}
+
+footer a:hover{
+  color: #FFF;
 }
 
 
@@ -712,5 +833,6 @@ h6{
  /*=================================
   footer styling ends here
 =================================*/
+}
 
 } 
