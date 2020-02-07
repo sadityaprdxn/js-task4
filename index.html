@@ -6,11 +6,13 @@
 <head>
  
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>HOME | SKIN BEAUTYS</title>
   <link rel="shortcut icon" href="favicon.ico" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
 
@@ -21,10 +23,10 @@
   <div class="container">
     <!--header section start-->
     <header>
-      <div class="wrapper">
+      <div class="sub-wrapper">
         <h1>
           <a href="#FIXME" title="Logo">
-            <img src="https://via.placeholder.com/140x35" alt="Logo">
+            <img src="https://via.placeholder.com/140x35/FFF" alt="Logo">
           </a>
         </h1>
         <nav>
@@ -34,7 +36,7 @@
             <span></span>
           </div>
 
-          <ul>
+          <ul class="nav-bar">
             <li>
               <a href="#FIXME" title="Home">home</a>
             </li>
@@ -65,7 +67,9 @@
     <main>
       <section class="banner">
         <div class="wrapper">
+
           <div class="slides">
+
             <div class="slide-one">
               <figure>
                 <img src="https://via.placeholder.com/1351x400" alt="slide-one">
@@ -73,20 +77,27 @@
               <h2><span>welcome to our </span>skin beauty</h2>
               <a href="#FIXME" title="Read More" class="read-slide">read more</a>
             </div>
+
             <div class="slide-two">
               <figure>
                 <img src="https://via.placeholder.com/1351x400" alt="slide-one">
               </figure>
+              <div class="wrapper">
               <h2><span>welcome to our </span>skin beauty</h2>
               <a href="#FIXME" title="Read More" class="read-slide">read more</a>
+              </div>
             </div>
+
             <div class="slide-three">
               <figure>
                 <img src="https://via.placeholder.com/1351x400" alt="slide-one">
               </figure>
+              <div class="wrapper">
               <h2><span>welcome to our </span>skin beauty</h2>
               <a href="#FIXME" title="Read More" class="read-slide">read more</a>
+              </div>
             </div>
+
           </div>
           <a href="#FIXME" class="slider-left-button" title="slider button">slider button</a>
           <a href="#FIXME" class="slider-right-button" title="slider button">slider button</a>
@@ -97,6 +108,7 @@
         <div class="wrapper">
           <h3>welcome to our website</h3>
           <span>experience the art of caring</span>
+          <div class="services">
           <article>
             <figure><img src="https://via.placeholder.com/345x130" alt="Pedicure & Beauty"></figure>
             <h4>Pedicure & Beauty</h4>
@@ -105,10 +117,11 @@
           </article>
           <article>
             <figure><img src="https://via.placeholder.com/345x130" alt="Pedicure & Beauty"></figure>
-            <h4>Pedicure & Beauty</h4>
+            <h4>Spa & Massage</h4>
             <p>ut enim ad minim veniam, quis nostrud excercitation ullamco</p>
             <a href="#FIXME" title="Read More" class="read-article">read more</a>
           </article>
+          </div>
         </div>
       </section>
 
@@ -122,41 +135,35 @@
           </article>
           <ul>
             <li>
-              <a href="#FIXME" title="Massage">
                 <a href="#FIXME" title="Happy Smile" class="happy-smile">happy smile</a>
                 massage
-              </a>
             </li>
             <li>
-              <a href="#FIXME" title="Hair Style">
                 <a href="#FIXME" title="Girl" class="girl">girl</a>
                 hair style
-              </a>
             </li>
             <li>
-              <a href="#FIXME" title="Facial Style">
                 <a href="#FIXME" title="Heart" class="heart">heart</a>
                 facial style
-              </a>
             </li>
             <li>
-              <a href="#FIXME" title="Eyebrows">
                 <a href="#FIXME" title="Eye" class="eye">eye</a>
                 eyebrows
-              </a>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="advertisment">
-        <figure><img src="https://via.placeholder.com/880x250" alt=""></figure>
+        <div class="wrapper">
+        <figure><img src="https://via.placeholder.com/780x251" alt=""></figure>
         <div class="users">
           <span>we have</span>
           <h4>7630 happy users</h4>
           <a href="#FIXME" title="Profile" class="profile">profile</a>
           <h4>steve joe</h4>
           <p>Onet consequat sapiem ut ieo cursus rhoncus nuliam dui mi, viputate ac metas semper.</p>
+        </div>
         </div>
       </section>
 
@@ -167,22 +174,22 @@
     <footer>
       <div class="wrapper">
         <ul class="footer-content">
-          <li>
+          <li class="skin-beauty">
             <h3>skin beauty</h3>
-            <p>Duis aute irure dolor in voluplate velit esse cillum dolore eu fugiat nulia pariatur.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluplate velit esse cillum dolore eu fugiat nulia pariatur.</p>
           </li>
-          <li>
-            <h6>recent article</h6>
-            <ol class="recent-article">
-              <li>ut enim ad minima ven aiam</li>
-              <li>fugiat nulia pariatur</li>
-              <li>Oler in repreh enderit</li>
-              <li>Duis auto irure dolor</li>
+          <li class="recent-article">
+            <h6>recent articles</h6>
+            <ol>
+              <li><a href="#FIXME">enim ad minima ven aiam</a></li>
+              <li><a href="#FIXME">fugiat nulia pariatur</a></li>
+              <li><a href="#FIXME">Oler in repreh enderit</a></li>
+              <li><a href="#FIXME">Duis auto irure dolor</a></li>
             </ol>
-          </li>
-          <li>
+          </li class="recent-article">
+          <li class="instagram-posts">
             <h6>instagram posts</h6>
-            <ul class="instagram-posts">
+            <ul>
               <li>
                 <a href="#FIXME" title="Post">
                   <img src="https://via.placeholder.com/65x45" alt="Instagarm Post">
@@ -215,9 +222,9 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li  class="contact">
             <h6>address</h6>
-            <ul class="contact">
+            <ul>
               <li>
                 <a href="#FIXME" title="Location" class="location">738 diamond road, new york</a>
               </li>
