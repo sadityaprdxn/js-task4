@@ -13,12 +13,10 @@ function show() {
   }
 
   var present = document.querySelector("#nav-bar").classList.contains("block");
-  console.log(present);
 
   if (!present) {
     document.querySelector("#nav-bar").classList.add("block");
-  }
-  else {
+  } else {
     document.querySelector("#nav-bar").classList.remove("block");
   }
 }
@@ -27,7 +25,6 @@ function show() {
 
 
 var elements = document.querySelectorAll("#nav-bar > li > a");
-console.log(elements);
 
 for (var i = 0; i < elements.length; i++) {
   elements[i].onclick = function () {
@@ -68,17 +65,20 @@ function plusSlides() {
 }
 
 function showSlides(n) {
-  var i;
+  var i = null;
   var slides = document.querySelectorAll(".slides > div")
 
   if (n > slides.length) {
     slideIndex = 1
   }
+  
   if (n < 1) {
-    slideIndex = slides.length
+    slideIndex = slides.lengthl;
   }
+  
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+  
   slides[slideIndex - 1].style.display = "block";
 }
