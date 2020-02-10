@@ -154,6 +154,7 @@ nav { display: inline-block; }
   display: block;
   color: #000;
 }
+
 .dropdown ul a:hover {
   background-color: #000;
   color: #FFF;
@@ -164,7 +165,7 @@ header div:first-child {
   display: flex;
   flex-wrap: wrap;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
@@ -340,7 +341,7 @@ h3 + span {
   display: inline-block;
   background-color: #FFF;
   box-sizing: border-box;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px 18px #888;
 }
 
 .welcome a:hover {
