@@ -29,8 +29,6 @@ function show(e) {
 }
 
 
-
-
 var elements = document.querySelectorAll("#nav-bar > li > a");
 
 for (var i = 0; i < elements.length; i++) {
